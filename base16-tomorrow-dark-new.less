@@ -10,20 +10,22 @@
 
   .invisible-character,
   .indent-guide {
-    color: #969896;
+    color: #373b41;
   }
 
   .gutter {
-    border-right: 1px solid #282a2e;
-    margin-right: 10px;
+    background-color: #282a2e;
+    border-right: 2px solid #373b41;
 
-    .line-numbers .line-number .cursor-line-no-selection {
-      color: #b4b7b4;
-    }
+    .line-number {
+      &.cursor-line {
+        background-color: #373b41;
+        color: #b4b7b4;
+      }
 
-    .line-numbers .line-number .cursor-line {
-      background-color: #373b41;
-      color: #b4b7b4;
+      &.cursor-line-no-selection {
+        color: #b4b7b4;
+      }
     }
   }
 
@@ -41,14 +43,13 @@
     color: #c5c8c6;
   }
 
+  .line.cursor-line {
+    background-color: #282a2e;
+  }
+
   .selection .region {
-    backgrund-color: #373b41;
+    background-color: #282a2e;
   }
-
-  .lines .cursor-line {
-    color: #282a2e;
-  }
-
 }
 
 .comment {
