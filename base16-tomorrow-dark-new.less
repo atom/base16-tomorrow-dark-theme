@@ -1,0 +1,282 @@
+.editor-colors {
+  background-color: #1d1f21;
+  color: #c5c8c6;
+}
+
+.editor {
+
+  background-color: #1d1f21;
+  color: #c5c8c6;
+
+  .invisible-character,
+  .indent-guide {
+    color: #969896;
+  }
+
+  .gutter {
+    border-right: 1px solid #282a2e;
+    margin-right: 10px;
+
+    .line-numbers .line-number .cursor-line-no-selection {
+      color: #b4b7b4;
+    }
+
+    .line-numbers .line-number .cursor-line {
+      background-color: #373b41;
+      color: #b4b7b4;
+    }
+  }
+
+  .gutter .line-number.fold,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: #969896;
+  }
+
+  .invisible {
+    color: #c5c8c6;
+  }
+
+  .cursor {
+    color: #c5c8c6;
+  }
+
+  .selection .region {
+    backgrund-color: #373b41;
+  }
+
+  .lines .cursor-line {
+    color: #282a2e;
+  }
+
+}
+
+.comment {
+  color: #969896;
+}
+
+.entity {
+
+  &.name.type {
+    color: #f0c674;
+  }
+
+  &.other.inherited-class {
+    color: #b5bd68;
+  }
+}
+
+.keyword {
+  color: #b294bb;
+
+  &.control {
+    color: #b294bb;
+  }
+
+  &.operator {
+    color: #c5c8c6;
+  }
+
+  &.other.special-method {
+    color: #81a2be;
+  }
+
+  &.other.unit {
+    color: #de935f;
+  }
+}
+
+.storage {
+  color: #b294bb;
+}
+
+.constant {
+  color: #de935f;
+
+  &.character.escape {
+    color: #8abeb7;
+  }
+
+  &.numeric {
+    color: #de935f;
+  }
+
+  &.other.color {
+    color: #8abeb7;
+  }
+
+  &.other.symbol {
+    color: #b5bd68;
+  }
+}
+
+.variable {
+  color: #cc6666;
+
+  &.interpolation {
+    color: #a3685a;
+  }
+
+  &.parameter.function {
+    color: #c5c8c6;
+  }
+}
+
+.invalid.illegal {
+  background-color: #cc6666;
+  color: #1d1f21;
+}
+
+.string {
+  &.regexp {
+    color: #8abeb7;
+  }
+
+  &.other.link {
+    color: #cc6666;
+  }
+}
+
+.punctuation {
+
+  &.definition {
+    &.comment {
+      color: #969896;
+    }
+
+    &.string,
+    &.variable,
+    &.parameters,
+    &.array {
+      color: #c5c8c6;
+    }
+
+    &.heading,
+    &.identity {
+      color: #81a2be;
+    }
+
+    &.bold {
+      color: #f0c674;
+      font-style: bold;
+    }
+
+    &.italic {
+      color: #b294bb;
+      font-style: italic;
+    }
+  }
+
+  &.section.embedded {
+    color: #a3685a;
+  }
+
+}
+
+.support {
+  &.class {
+    color: #f0c674;
+  }
+
+  &.function  {
+    color: #8abeb7;
+
+    &.any-method {
+      color: #81a2be;
+    }
+  }
+}
+
+.entity {
+
+  &.name.function {
+    color: #81a2be;
+  }
+
+  &.name.class, &.name.type.class {
+    color: #f0c674;
+  }
+
+  &.name.section {
+    color: #81a2be;
+  }
+
+  &.name.tag {
+    color: #cc6666;
+  }
+
+  &.other.attribute-name {
+    color: #de935f;
+
+    &.id {
+      color: #81a2be;
+    }
+  }
+}
+
+.meta {
+  &.class {
+    color: #f0c674;
+  }
+
+  &.link {
+    color: #de935f;
+  }
+
+  &.require {
+    color: #81a2be;
+  }
+
+  &.selector {
+    color: #b294bb;
+  }
+
+  &.separator {
+    background-color: #373b41;
+    color: #c5c8c6;
+  }
+}
+
+.none {
+  color: #c5c8c6;
+}
+
+.markup {
+  &.bold {
+    color: #de935f;
+    font-style: bold;
+  }
+
+  &.changed {
+    color: #b294bb;
+  }
+
+  &.deleted {
+    color: #cc6666;
+  }
+
+  &.italic {
+    color: #b294bb;
+    font-style: italic;
+  }
+
+  &.heading .punctuation.definition.heading {
+    color: #81a2be;
+  }
+
+  &.inserted {
+    color: #b5bd68;
+  }
+
+  &.list {
+    color: #cc6666;
+  }
+
+  &.quote {
+    color: #de935f;
+  }
+
+  &.raw.inline {
+    color: #b5bd68;
+  }
+}
