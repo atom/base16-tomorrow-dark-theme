@@ -18,6 +18,7 @@
     border-right: 2px solid #373b41;
 
     .line-number {
+
       &.cursor-line {
         background-color: #373b41;
         color: #b4b7b4;
@@ -43,8 +44,10 @@
     color: #c5c8c6;
   }
 
-  .line.cursor-line {
-    background-color: #282a2e;
+  .line {
+    &.cursor-line {
+      background-color: #282a2e;
+    }
   }
 
   .selection .region {
@@ -60,6 +63,7 @@
 
   &.name.type {
     color: #f0c674;
+    text-decoration: underline;
   }
 
   &.other.inherited-class {
@@ -129,8 +133,15 @@
 }
 
 .string {
+  color: #b5bd68;
+
+
   &.regexp {
     color: #8abeb7;
+
+    .source.ruby.embedded {
+      color: #FF8000;
+    }
   }
 
   &.other.link {
@@ -204,6 +215,7 @@
 
   &.name.tag {
     color: #cc6666;
+    text-decoration: underline;
   }
 
   &.other.attribute-name {
