@@ -1,6 +1,8 @@
 # Base16 Theme for Atom
 
-To install:
+![](https://gist.github.com/wfarr/2896fc933d7b316a0f5c/raw/768d961b7ecdf6ca25d0276a57d2eebf1d6e1b11/Screen+Shot+2013-08-10+at+9.16.32+PM.png)
+
+## Installation
 
 ```
 mkdir -p ~/.atom/themes
