@@ -1,6 +1,6 @@
 # Base16 Theme for Atom
 
-![](https://gist.github.com/wfarr/2896fc933d7b316a0f5c/raw/768d961b7ecdf6ca25d0276a57d2eebf1d6e1b11/Screen+Shot+2013-08-10+at+9.16.32+PM.png)
+![](https://gist.github.com/wfarr/b7e57aa178fbca6519af/raw/b29d8fd9709da997380263d05d1c2b26dfb73967/Screen+Shot+2013-08-10+at+9.17.41+PM.png)
 
 ## Installation
 
