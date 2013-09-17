@@ -4,7 +4,7 @@
 
 ## Installation
 
-This theme is now included with Atom and can be activate from the settings
+This theme is now included with Atom and can be activated from the settings
 view via `cmd-,` or the Atom > Preferences... menu
 
 To install manually:
