@@ -4,7 +4,13 @@
 
 ## Installation
 
-```
-mkdir -p ~/.atom/themes
-git clone https://github.com/atom/base16-tomorrow-dark-theme ~/.atom/themes/base16-tomorrow-dark
+This theme is now included with Atom and can be activate from the settings
+view via `cmd-,` or the Atom > Preferences... menu
+
+To install manually:
+
+```sh
+git clone https://github.com/atom/base16-tomorrow-dark-theme
+cd base16-tomorrow-dark-theme
+apm link
 ```
