@@ -3,17 +3,8 @@
   "theme": true,
   "version": "0.6.0",
   "description": "Base16 theme for Atom",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/atom/base16-tomorrow-dark-theme.git"
-  },
-  "bugs": {
-    "url": "https://github.com/atom/base16-tomorrow-dark-theme/issues"
-  },
+  "repository": "https://github.com/atom/base16-tomorrow-dark-theme",
   "engines": {
     "atom": ">26.0"
-  },
-  "publishConfig": {
-    "registry": "https://atom.cloudant.com/registry/_design/app/_rewrite"
   }
 }
