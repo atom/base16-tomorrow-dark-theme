@@ -1,7 +1,7 @@
 {
   "name": "base16-tomorrow-dark-theme",
   "theme": true,
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Base16 theme for Atom",
   "repository": "https://github.com/atom/base16-tomorrow-dark-theme",
   "engines": {
