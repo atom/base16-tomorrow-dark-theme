@@ -1,16 +1,11 @@
-# Base16 Theme for Atom
+# Tomorrow Dark Syntax theme
 
-![](https://gist.github.com/wfarr/b7e57aa178fbca6519af/raw/b29d8fd9709da997380263d05d1c2b26dfb73967/Screen+Shot+2013-08-10+at+9.17.41+PM.png)
+Atom theme using the ever popular [base16][base16] tomorrow dark colors.
 
-## Installation
+This theme is installed by default with Atom and can be activated by going to
+the _Themes_ section in the Settings view (`cmd-,`) and selecting it from the
+_Syntax Themes_ drop-down menu.
 
-This theme is now included with Atom and can be activated from the settings
-view via `cmd-,` or the Atom > Preferences... menu
+![](https://f.cloud.github.com/assets/671378/2264966/e636b0c6-9e79-11e3-925a-a5225d6cd8b8.png)
 
-To install manually:
-
-```sh
-git clone https://github.com/atom/base16-tomorrow-dark-theme
-cd base16-tomorrow-dark-theme
-apm link
-```
+[base16]: https://github.com/chriskempson/base16
