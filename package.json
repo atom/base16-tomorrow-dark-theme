@@ -4,6 +4,7 @@
   "version": "0.11.0",
   "description": "Base16 theme for Atom",
   "repository": "https://github.com/atom/base16-tomorrow-dark-theme",
+  "license": "MIT",
   "engines": {
     "atom": ">0.49.0"
   }
