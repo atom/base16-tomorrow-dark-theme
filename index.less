@@ -1,31 +1,40 @@
+@import "syntax-variables";
+
 .editor-colors {
-  background-color: #1d1f21;
-  color: #c5c8c6;
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
 }
 
 .editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
 
-  background-color: #1d1f21;
-  color: #c5c8c6;
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
 
-  .invisible-character,
   .indent-guide {
-    color: #373b41;
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
   }
 
   .gutter {
-    background-color: #282a2e;
-    border-right: 2px solid #373b41;
+    background-color: @syntax-gutter-background-color;
+    border-right: 2px solid @syntax-gutter-background-color-selected;
+    color: @syntax-gutter-text-color;
 
     .line-number {
       padding: 0 0.25em 0 0.5em;
       &.cursor-line {
-        background-color: #373b41;
-        color: #b4b7b4;
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
       }
 
       &.cursor-line-no-selection {
-        color: #b4b7b4;
+        color: @syntax-gutter-text-color-selected;
       }
     }
   }
@@ -33,7 +42,7 @@
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: #969896;
+    color: @light-gray;
   }
 
   .scroll-view {
@@ -41,118 +50,118 @@
   }
 
   .invisible {
-    color: #c5c8c6;
+    color: @syntax-text-color;
   }
 
   .cursor {
-    color: #c5c8c6;
+    color: @syntax-cursor-color;
   }
 
   .selection .region {
-    background-color: lighten(#282a2e, 10%);
+    background-color: @syntax-selection-color;
   }
 }
 
 .editor .search-results .marker .region {
   background-color: transparent;
-  border: 1px solid #888;
+  border: 1px solid @syntax-result-marker-color;
 }
 
 .editor .search-results .marker.current-result .region {
-  border: 1px solid #fff;
+  border: 1px solid @syntax-result-marker-color-selected;
 }
 
 .comment {
-  color: #969896;
+  color: @light-gray;
 }
 
 .entity {
 
   &.name.type {
-    color: #f0c674;
+    color: @light-orange;
     text-decoration: underline;
   }
 
   &.other.inherited-class {
-    color: #b5bd68;
+    color: @green;
   }
 }
 
 .keyword {
-  color: #b294bb;
+  color: @purple;
 
   &.control {
-    color: #b294bb;
+    color: @purple;
   }
 
   &.operator {
-    color: #c5c8c6;
+    color: @syntax-text-color;
   }
 
   &.other.special-method {
-    color: #81a2be;
+    color: @blue;
   }
 
   &.other.unit {
-    color: #de935f;
+    color: @orange;
   }
 }
 
 .storage {
-  color: #b294bb;
+  color: @purple;
 }
 
 .constant {
-  color: #de935f;
+  color: @orange;
 
   &.character.escape {
-    color: #8abeb7;
+    color: @cyan;
   }
 
   &.numeric {
-    color: #de935f;
+    color: @orange;
   }
 
   &.other.color {
-    color: #8abeb7;
+    color: @cyan;
   }
 
   &.other.symbol {
-    color: #b5bd68;
+    color: @green;
   }
 }
 
 .variable {
-  color: #cc6666;
+  color: @red;
 
   &.interpolation {
-    color: #a3685a;
+    color: @dark-red;
   }
 
   &.parameter.function {
-    color: #c5c8c6;
+    color: @syntax-text-color;
   }
 }
 
 .invalid.illegal {
-  background-color: #cc6666;
-  color: #1d1f21;
+  background-color: @red;
+  color: @syntax-background-color;
 }
 
 .string {
-  color: #b5bd68;
+  color: @green;
 
 
   &.regexp {
-    color: #8abeb7;
+    color: @cyan;
 
     .source.ruby.embedded {
-      color: #FF8000;
+      color: @bright-orange;
     }
   }
 
   &.other.link {
-    color: #cc6666;
+    color: @red;
   }
 }
 
@@ -160,48 +169,48 @@
 
   &.definition {
     &.comment {
-      color: #969896;
+      color: @light-gray;
     }
 
     &.string,
     &.variable,
     &.parameters,
     &.array {
-      color: #c5c8c6;
+      color: @syntax-text-color;
     }
 
     &.heading,
     &.identity {
-      color: #81a2be;
+      color: @blue;
     }
 
     &.bold {
-      color: #f0c674;
+      color: @light-orange;
       font-style: bold;
     }
 
     &.italic {
-      color: #b294bb;
+      color: @purple;
       font-style: italic;
     }
   }
 
   &.section.embedded {
-    color: #a3685a;
+    color: @dark-red;
   }
 
 }
 
 .support {
   &.class {
-    color: #f0c674;
+    color: @light-orange;
   }
 
   &.function  {
-    color: #8abeb7;
+    color: @cyan;
 
     &.any-method {
-      color: #81a2be;
+      color: @blue;
     }
   }
 }
@@ -209,102 +218,102 @@
 .entity {
 
   &.name.function {
-    color: #81a2be;
+    color: @blue;
   }
 
   &.name.class, &.name.type.class {
-    color: #f0c674;
+    color: @light-orange;
   }
 
   &.name.section {
-    color: #81a2be;
+    color: @blue;
   }
 
   &.name.tag {
-    color: #cc6666;
+    color: @red;
     text-decoration: underline;
   }
 
   &.other.attribute-name {
-    color: #de935f;
+    color: @orange;
 
     &.id {
-      color: #81a2be;
+      color: @blue;
     }
   }
 }
 
 .meta {
   &.class {
-    color: #f0c674;
+    color: @light-orange;
   }
 
   &.link {
-    color: #de935f;
+    color: @orange;
   }
 
   &.require {
-    color: #81a2be;
+    color: @blue;
   }
 
   &.selector {
-    color: #b294bb;
+    color: @purple;
   }
 
   &.separator {
     background-color: #373b41;
-    color: #c5c8c6;
+    color: @syntax-text-color;
   }
 }
 
 .none {
-  color: #c5c8c6;
+  color: @syntax-text-color;
 }
 
 .markup {
   &.bold {
-    color: #de935f;
+    color: @orange;
     font-style: bold;
   }
 
   &.changed {
-    color: #b294bb;
+    color: @purple;
   }
 
   &.deleted {
-    color: #cc6666;
+    color: @red;
   }
 
   &.italic {
-    color: #b294bb;
+    color: @purple;
     font-style: italic;
   }
 
   &.heading .punctuation.definition.heading {
-    color: #81a2be;
+    color: @blue;
   }
 
   &.inserted {
-    color: #b5bd68;
+    color: @green;
   }
 
   &.list {
-    color: #cc6666;
+    color: @red;
   }
 
   &.quote {
-    color: #de935f;
+    color: @orange;
   }
 
   &.raw.inline {
-    color: #b5bd68;
+    color: @green;
   }
 }
 
 .source.gfm .markup {
   -webkit-font-smoothing: auto;
   &.heading {
-    color: #cc6666;
+    color: @red;
   }
 }
 
