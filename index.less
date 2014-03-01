@@ -1,31 +1,36 @@
+@import "syntax-variables";
+
 .editor-colors {
-  background-color: #1d1f21;
-  color: #c5c8c6;
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
 }
 
 .editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
 
-  background-color: #1d1f21;
-  color: #c5c8c6;
-
-  .invisible-character,
   .indent-guide {
-    color: #373b41;
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
   }
 
   .gutter {
-    background-color: #282a2e;
-    border-right: 2px solid #373b41;
+    background-color: @syntax-gutter-background-color;
+    border-right: 2px solid @syntax-gutter-background-color-selected;
+    color: @syntax-gutter-text-color;
 
     .line-number {
       padding: 0 0.25em 0 0.5em;
       &.cursor-line {
-        background-color: #373b41;
-        color: #b4b7b4;
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
       }
 
       &.cursor-line-no-selection {
-        color: #b4b7b4;
+        color: @syntax-gutter-text-color-selected;
       }
     }
   }
@@ -41,25 +46,25 @@
   }
 
   .invisible {
-    color: #c5c8c6;
+    color: @syntax-text-color;
   }
 
   .cursor {
-    color: #c5c8c6;
+    color: @syntax-cursor-color;
   }
 
   .selection .region {
-    background-color: lighten(#282a2e, 10%);
+    background-color: @syntax-selection-color;
   }
 }
 
 .editor .search-results .marker .region {
   background-color: transparent;
-  border: 1px solid #888;
+  border: 1px solid @syntax-result-marker-color;
 }
 
 .editor .search-results .marker.current-result .region {
-  border: 1px solid #fff;
+  border: 1px solid @syntax-result-marker-color-selected;
 }
 
 .comment {
@@ -86,7 +91,7 @@
   }
 
   &.operator {
-    color: #c5c8c6;
+    color: @syntax-text-color;
   }
 
   &.other.special-method {
@@ -130,13 +135,13 @@
   }
 
   &.parameter.function {
-    color: #c5c8c6;
+    color: @syntax-text-color;
   }
 }
 
 .invalid.illegal {
   background-color: #cc6666;
-  color: #1d1f21;
+  color: @syntax-background-color;
 }
 
 .string {
@@ -167,7 +172,7 @@
     &.variable,
     &.parameters,
     &.array {
-      color: #c5c8c6;
+      color: @syntax-text-color;
     }
 
     &.heading,
@@ -253,12 +258,12 @@
 
   &.separator {
     background-color: #373b41;
-    color: #c5c8c6;
+    color: @syntax-text-color;
   }
 }
 
 .none {
-  color: #c5c8c6;
+  color: @syntax-text-color;
 }
 
 .markup {
