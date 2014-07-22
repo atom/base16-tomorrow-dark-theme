@@ -2,7 +2,7 @@
   "name": "base16-tomorrow-dark-theme",
   "theme": "syntax",
   "version": "0.19.0",
-  "description": "Base16 theme for Atom",
+  "description": "Base16 dark theme for Atom",
   "repository": "https://github.com/atom/base16-tomorrow-dark-theme",
   "license": "MIT",
   "engines": {
