@@ -301,10 +301,20 @@
   }
 }
 
-.source.gfm .markup {
-  -webkit-font-smoothing: auto;
-  &.heading {
-    color: @red;
+.source.gfm {
+  .markup {
+    -webkit-font-smoothing: auto;
+    &.heading {
+      color: @red;
+    }
+
+    &.link {
+      color: @blue;
+    }
+  }
+
+  .link .entity {
+    color: @cyan;
   }
 }
 
