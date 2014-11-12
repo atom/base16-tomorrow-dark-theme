@@ -1,14 +1,11 @@
 @import "syntax-variables";
 
-.editor-colors {
+.editor-colors, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-.editor {
-  background-color: @syntax-background-color;
-  color: @syntax-text-color;
-
+.editor, :host {
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
   }
@@ -318,6 +315,8 @@
   }
 }
 
-.editor.mini .scroll-view {
-  padding-left: 1px;
+.editor.mini, :host([mini]) {
+  .scroll-view {
+    padding-left: 1px;
+  }
 }
