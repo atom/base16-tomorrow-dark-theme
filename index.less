@@ -74,7 +74,7 @@ atom-text-editor, :host {
 }
 
 .keyword {
-  color: @syntax-color-keyword;
+  color: @purple;
 
   &.control {
     color: @purple;
@@ -85,7 +85,7 @@ atom-text-editor, :host {
   }
 
   &.other.special-method {
-    color: @syntax-color-method;
+    color: @blue;
   }
 
   &.other.unit {
@@ -98,7 +98,7 @@ atom-text-editor, :host {
 }
 
 .constant {
-  color: @syntax-color-constant;
+  color: @orange;
 
   &.character.escape {
     color: @cyan;
@@ -118,7 +118,7 @@ atom-text-editor, :host {
 }
 
 .variable {
-  color: @syntax-color-variable;
+  color: @red;
 
   &.interpolation {
     color: @dark-red;
@@ -185,14 +185,14 @@ atom-text-editor, :host {
 
 .support {
   &.class {
-    color: @syntax-color-class;
+    color: @light-orange;
   }
 
   &.function  {
     color: @cyan;
 
     &.any-method {
-      color: @syntax-color-method;
+      color: @blue;
     }
   }
 }
@@ -200,11 +200,11 @@ atom-text-editor, :host {
 .entity {
 
   &.name.function {
-    color: @syntax-color-function;
+    color: @blue;
   }
 
   &.name.class, &.name.type.class {
-    color: @syntax-color-class;
+    color: @light-orange;
   }
 
   &.name.section {
@@ -212,12 +212,12 @@ atom-text-editor, :host {
   }
 
   &.name.tag {
-    color: @syntax-color-tag;
+    color: @red;
     text-decoration: underline;
   }
 
   &.other.attribute-name {
-    color: @syntax-color-attribute;
+    color: @orange;
 
     &.id {
       color: @blue;
@@ -227,7 +227,7 @@ atom-text-editor, :host {
 
 .meta {
   &.class {
-    color: @syntax-color-class;
+    color: @light-orange;
   }
 
   &.link {
