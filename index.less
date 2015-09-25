@@ -18,11 +18,11 @@ atom-text-editor, :host {
 
   .gutter {
     background-color: @syntax-gutter-background-color;
-    border-right: 2px solid @syntax-gutter-background-color-selected;
     color: @syntax-gutter-text-color;
 
     .line-number {
       padding: 0 0.25em 0 0.5em;
+      -webkit-font-smoothing: antialiased;
       &.cursor-line {
         background-color: @syntax-gutter-background-color-selected;
         color: @syntax-gutter-text-color-selected;
