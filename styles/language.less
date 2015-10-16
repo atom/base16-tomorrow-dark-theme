@@ -212,16 +212,20 @@
     font-style: italic;
   }
 
-  &.heading .punctuation.definition.heading {
+  &.heading {
+    color: @red;
+
+    .punctuation.definition.heading {
+      color: @blue;
+    }
+  }
+
+  &.link {
     color: @blue;
   }
 
   &.inserted {
     color: @green;
-  }
-
-  &.list {
-    color: @red;
   }
 
   &.quote {
@@ -236,13 +240,6 @@
 .source.gfm {
   .markup {
     -webkit-font-smoothing: auto;
-    &.heading {
-      color: @red;
-    }
-
-    &.link {
-      color: @blue;
-    }
   }
 
   .link .entity {
