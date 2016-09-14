@@ -117,8 +117,16 @@
     }
   }
 
-  &.section.embedded {
-    color: @brown;
+  &.section {
+    &.embedded {
+      color: @brown;
+    }
+
+    &.method,
+    &.class,
+    &.inner-class {
+      color: @syntax-text-color;
+    }
   }
 }
 
@@ -166,10 +174,19 @@
 .meta {
   &.class {
     color: @yellow;
+
+    &.body {
+      color: @syntax-text-color;
+    }
   }
 
   &.link {
     color: @orange;
+  }
+
+  &.method-call,
+  &.method {
+    color: @syntax-text-color;
   }
 
   &.require {
