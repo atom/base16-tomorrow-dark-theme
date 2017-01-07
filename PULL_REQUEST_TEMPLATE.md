@@ -5,7 +5,11 @@
 
 ### Description of the Change
 
-The link in comment need be override with gray color. The link color was blue before fixed.
+<!--
+
+We must be able to understand the design of your change from this description. If we can't get a good idea of what the code will be doing from the description here, the pull request may be closed at the maintainers' discretion. Keep in mind that the maintainer reviewing this PR may not be familiar with or have worked with the code here recently, so please walk us through the concepts.
+
+-->
 
 ### Alternate Designs
 
@@ -21,4 +25,4 @@ The link in comment need be override with gray color. The link color was blue be
 
 ### Applicable Issues
 
-[Inproper url highlight](https://github.com/atom/base16-tomorrow-dark-theme/issues/38)
+<!-- Enter any applicable Issues here -->
