@@ -1,3 +1,7 @@
+### This package is now a part of the [core Atom repository](https://github.com/atom/atom/tree/master/packages/base16-tomorrow-dark-theme), please direct all issues and pull requests there in the future!
+
+---
+
 # Base16 Tomorrow Dark Syntax theme
 
 Atom theme using the ever popular [Base16 Tomorrow](http://chriskempson.github.io/base16/#tomorrow) dark colors.
